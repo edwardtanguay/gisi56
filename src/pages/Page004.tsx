@@ -1,5 +1,8 @@
 export const Page004 = () => {
 	return (
-		<p>This coming year, a particularly difficult challenge is awaiting you:</p>
+		<main>
+			<p className="mb-[2rem]">This coming year, a particularly difficult challenge is awaiting you!</p>
+			<img src="images/await.png" />
+		</main>
 	)
 }

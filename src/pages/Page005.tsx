@@ -1,5 +1,8 @@
 export const Page005 = () => {
 	return (
-		<p>Cross the Alps!</p>
+		<main>
+			<p className="mb-[2rem]">Cross the Alps!</p>
+			<img src="images/cross.png" />
+		</main>
 	)
 }
