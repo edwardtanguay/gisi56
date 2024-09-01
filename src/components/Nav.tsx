@@ -33,7 +33,6 @@ export const Nav = () => {
 	const nextPageId = getNextPageId();
 
 	return <nav className="flex justify-end mt-2 mr-2">
-[{nextPageId}]
 		<button><NavLink to={nextPageId}>next</NavLink></button>
 	</nav>;
 };

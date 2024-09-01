@@ -5,6 +5,9 @@ export const PageWelcome = () => {
 	// const { message } = useContext(AppContext);
 
 	return (
-		<p>Happy Birthday, Gisela!</p>
+		<main>
+			<p>Happy Birthday, Gisela!</p>
+			<img src="images/celebrate.png" />
+		</main>
 	)
 }

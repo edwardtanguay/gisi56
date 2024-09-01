@@ -7,6 +7,14 @@
 		font-variant: small-caps;
 	}
 
+	p {
+		@apply text-[2rem]
+	}
+
+	main {
+		@apply flex justify-center pt-[2rem] flex-col;
+	}
+
 	button {
 		@apply bg-slate-400 px-2 rounded text-[1.4rem];
 	}
