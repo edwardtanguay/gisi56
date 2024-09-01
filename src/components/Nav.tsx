@@ -45,7 +45,7 @@ export const Nav = () => {
 		) :
 			<button className="text-white bg-white"><NavLink to={prevPageId}>prev</NavLink></button>
 		}
-		{currentPageNumber}/13
+		{currentPageNumber}/12
 		<button><NavLink to={nextPageId}>next</NavLink></button>
 	</nav>;
 };
