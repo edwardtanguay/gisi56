@@ -13,7 +13,6 @@ const pages = [
 	"page010",
 	"page011",
 	"page012",
-	"page013",
 ];
 
 

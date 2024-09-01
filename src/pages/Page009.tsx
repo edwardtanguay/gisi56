@@ -1,5 +1,8 @@
 export const Page009 = () => {
 	return (
-		<p>Here's how it works:</p>
+		<main>
+			<p className="mb-[2rem]">Here's how it works:</p>
+			<img src="images/plan.png" />
+		</main>
 	)
 }
