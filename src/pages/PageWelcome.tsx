@@ -5,6 +5,6 @@ export const PageWelcome = () => {
 	// const { message } = useContext(AppContext);
 
 	return (
-		<p>welcome page</p>
+		<p>Happy Birthday, Gisela!</p>
 	)
 }

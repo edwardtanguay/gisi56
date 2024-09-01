@@ -3,7 +3,17 @@ import { NavLink, useLocation } from "react-router-dom";
 const pages = [
 	"welcome",
 	"page002",
-	"page003"
+	"page003",
+	"page004",
+	"page005",
+	"page006",
+	"page007",
+	"page008",
+	"page009",
+	"page010",
+	"page011",
+	"page012",
+	"page013",
 ];
 
 
