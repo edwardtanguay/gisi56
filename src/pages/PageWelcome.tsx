@@ -1,10 +1,10 @@
-import { useContext } from "react"
-import { AppContext } from "../AppContext"
+// import { useContext } from "react"
+// import { AppContext } from "../AppContext"
 
 export const PageWelcome = () => {
-	const { message } = useContext(AppContext);
+	// const { message } = useContext(AppContext);
 
 	return (
-		<p>{message}</p>
+		<p>welcome page</p>
 	)
 }

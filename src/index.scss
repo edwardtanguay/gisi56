@@ -6,8 +6,8 @@
 	h1 {
 		font-variant: small-caps;
 	}
-}
 
-a.active {
-	color: rgb(232, 232, 141);
+	button {
+		@apply bg-slate-400 px-2 rounded;
+	}
 }
