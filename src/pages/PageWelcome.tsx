@@ -5,7 +5,7 @@ export const PageWelcome = () => {
 	// const { message } = useContext(AppContext);
 
 	return (
-		<main>
+		<main className="mt-[3rem]">
 			<p>Happy Birthday, Gisela!</p>
 			<img src="images/celebrate.png" />
 		</main>

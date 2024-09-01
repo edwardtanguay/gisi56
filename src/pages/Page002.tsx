@@ -1,5 +1,8 @@
 export const Page002 = () => {
 	return (
-		<p>I wish you health and happiness for another year of life.</p>
+		<main>
+			<p className="mb-[2rem]">I wish you health and happiness for the coming year.</p>
+			<img src="images/calendar.png" />
+		</main>
 	)
 }
