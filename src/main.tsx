@@ -16,7 +16,6 @@ import { Page009 } from "./pages/Page009.tsx";
 import { Page010 } from "./pages/Page010.tsx";
 import { Page011 } from "./pages/Page011.tsx";
 import { Page012 } from "./pages/Page012.tsx";
-import { Page013 } from "./pages/Page013.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -71,10 +70,6 @@ const router = createBrowserRouter([
 			{
 				path: "page012",
 				element: <Page012/>
-			},
-			{
-				path: "page013",
-				element: <Page013/>
 			},
 			{
 				path: "/",
