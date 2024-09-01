@@ -19,20 +19,34 @@ const pages = [
 
 export const Nav = () => {
 	const location = useLocation();
+	const path = location.pathname;
+	const segments = path.split('/').filter(Boolean);
+	const currentPageId = segments.length > 0 ? segments[segments.length - 1] : "welcome";
+	const currentIndex = pages.indexOf(currentPageId);
+	const currentPageNumber = currentIndex + 1;
 
+	const getPrevPageId = () => {
+		if (currentIndex === -1 || currentIndex === pages.length - 1) {
+			return 'welcome';
+		}
+		return pages[currentIndex - 1];
+	}
 	const getNextPageId = () => {
-		const path = location.pathname;
-		const segments = path.split('/').filter(Boolean);
-		const currentPageId = segments.length > 0 ? segments[segments.length - 1] : "welcome";
-		const currentIndex = pages.indexOf(currentPageId);
 		if (currentIndex === -1 || currentIndex === pages.length - 1) {
 			return 'welcome';
 		}
 		return pages[currentIndex + 1];
 	}
+	const prevPageId = getPrevPageId();
 	const nextPageId = getNextPageId();
 
-	return <nav className="flex justify-end mt-2 mr-2">
+	return <nav className="flex justify-between mt-2 mr-2">
+		{currentPageNumber !== 1 ? (
+			<button><NavLink to={prevPageId}>prev</NavLink></button>
+		) :
+			<button className="text-white bg-white"><NavLink to={prevPageId}>prev</NavLink></button>
+		}
+		{currentPageNumber}/13
 		<button><NavLink to={nextPageId}>next</NavLink></button>
 	</nav>;
 };
